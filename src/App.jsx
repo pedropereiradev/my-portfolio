@@ -4,6 +4,7 @@ import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 import Learning from './components/Learning';
 import NavBar from './components/NavBar';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Skills />
       <Learning />
+      <Projects />
       <ContactMe />
       <Footer />
     </>
