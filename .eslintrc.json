@@ -18,5 +18,9 @@
         "react"
     ],
     "rules": {
-    }
+    },
+    "ignorePatterns": [
+        "src/tests/*.test.js",
+        "src/reportWebVitals.js"
+    ]
 }
