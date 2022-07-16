@@ -33,7 +33,7 @@ function About() {
           },
         }}
       >
-        <Stack direction={{ xs: 'column', sm: 'row' }}>
+        <Stack direction={{ xs: 'column', md: 'row' }}>
           <Box
             sx={{
               width: {
@@ -55,7 +55,7 @@ function About() {
               justifyContent: 'center',
               alignItems: 'flex-end',
               marginLeft: {
-                sm: '8rem',
+                md: '8rem',
               },
               marginTop: {
                 xs: '5rem',
