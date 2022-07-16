@@ -1,11 +1,13 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
 import Email from '@mui/icons-material/Email';
 import GitHub from '@mui/icons-material/GitHub';
 import LinkedIn from '@mui/icons-material/LinkedIn';
 import Telegram from '@mui/icons-material/Telegram';
-import { Button, Divider, Stack } from '@mui/material';
 import footer from '../assets/footer.svg';
 
 function Footer() {
