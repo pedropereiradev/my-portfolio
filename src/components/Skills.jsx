@@ -21,6 +21,9 @@ function Skills() {
           sx={{
             py: 3,
             color: 'info.main',
+            fontSize: {
+              xs: '3rem',
+            },
           }}
         >
           Skills
@@ -59,6 +62,9 @@ function Skills() {
           sx={{
             py: 3,
             color: 'info.main',
+            fontSize: {
+              xs: '3rem',
+            },
           }}
         >
           Learning

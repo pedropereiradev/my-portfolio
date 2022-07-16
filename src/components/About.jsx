@@ -20,7 +20,10 @@ function About() {
         align="center"
         sx={{
           color: 'info.main',
-          mb: 5,
+          py: 3,
+          fontSize: {
+            xs: '3rem',
+          },
         }}
       >
         About me
