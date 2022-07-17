@@ -118,7 +118,11 @@ function ContactMe() {
               <FormHelperText error>{errors.message?.message}</FormHelperText>
             </FormControl>
 
-            <Button variant="contained" loading onClick={handleSubmit(sendEmail)}>
+            <Button
+              variant="contained"
+              size="large"
+              onClick={handleSubmit(sendEmail)}
+            >
               Send
               <Send sx={{ ml: 2 }} />
             </Button>
