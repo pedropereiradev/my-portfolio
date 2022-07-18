@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
-import {
-  CssBaseline, ThemeProvider,
-} from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import About from './components/About';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
