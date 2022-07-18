@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
@@ -12,10 +12,11 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-
-// TODO: Linkar sections names com cada section
+import { DarkMode, LightMode } from '@mui/icons-material';
+import Context from '../context/Context';
 
 function NavBar() {
+  const { colorMode, mode } = useContext(Context);
   const [anchor, setAnchor] = useState(false);
 
   const sections = ['skills', 'projects', 'contact'];
@@ -114,6 +115,9 @@ function NavBar() {
               </Button>
             ))}
           </Box>
+          <IconButton sx={{ ml: { xs: 0, sm: 5 } }} onClick={colorMode.toggleColorMode} color="inherit">
+            {mode === 'dark' ? <DarkMode /> : <LightMode /> }
+          </IconButton>
         </Toolbar>
       </Container>
     </AppBar>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -8,15 +8,18 @@ import Email from '@mui/icons-material/Email';
 import GitHub from '@mui/icons-material/GitHub';
 import LinkedIn from '@mui/icons-material/LinkedIn';
 import Telegram from '@mui/icons-material/Telegram';
-import footer from '../assets/footer.svg';
+import footerLight from '../assets/footer-light.svg';
+import footerDark from '../assets/footer-dark.svg';
+import Context from '../context/Context';
 
 function Footer() {
+  const { mode } = useContext(Context);
   return (
     <Box
       component="footer"
       variant="footer"
       sx={{
-        backgroundImage: `url(${footer})`,
+        backgroundImage: `url(${mode === 'light' ? footerLight : footerDark})`,
         backgroundSize: 'cover',
         display: 'flex',
         flexDirection: 'column',

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -9,8 +9,10 @@ import Typography from '@mui/material/Typography';
 import projects from '../services/projects';
 import ProjectModal from './ProjectModal';
 import useWindowSize from '../hooks/useWindowSize';
+import Context from '../context/Context';
 
 function Projects() {
+  const { mode } = useContext(Context);
   const size = useWindowSize();
   const [open, setOpen] = useState(false);
   const [projectInfo, setProjectInfo] = useState({
@@ -33,7 +35,7 @@ function Projects() {
       id="projects"
       component="section"
       sx={{
-        backgroundColor: '#fcfcfc',
+        backgroundColor: mode === 'ligth' ? '#fcfcfc' : '#101010',
         p: 3,
       }}
     >

@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import PortfolioImage from '../assets/portfolioImage.png';
+import Context from '../context/Context';
 
 function About() {
+  const { mode } = useContext(Context);
   return (
     <Box
       component="section"
       sx={{
-        backgroundColor: '#fcfcfc',
+        backgroundColor: mode === 'ligth' ? '#fcfcfc' : '#101010',
         p: 3,
       }}
     >
