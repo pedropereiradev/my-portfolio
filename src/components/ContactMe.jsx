@@ -48,7 +48,7 @@ function ContactMe() {
   };
 
   return (
-    <Box>
+    <Box id="contact">
       <Typography
         variant="h2"
         component="h2"

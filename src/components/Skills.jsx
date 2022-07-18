@@ -12,6 +12,7 @@ function Skills() {
   return (
     <Stack
       direction={{ xs: 'column', sm: 'row' }}
+      id="skills"
     >
       <Container>
         <Typography
