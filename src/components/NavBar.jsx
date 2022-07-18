@@ -18,7 +18,7 @@ import ListItemText from '@mui/material/ListItemText';
 function NavBar() {
   const [anchor, setAnchor] = useState(false);
 
-  const sections = ['Skills', 'Projects', 'Contact me'];
+  const sections = ['skills', 'projects', 'contact'];
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -73,10 +73,10 @@ function NavBar() {
                 onKeyDown={toggleDrawer(false)}
               >
                 <List>
-                  {sections.map((text) => (
-                    <ListItem key={text} disablePadding>
-                      <ListItemButton>
-                        <ListItemText primary={text} />
+                  {sections.map((section) => (
+                    <ListItem key={section} disablePadding>
+                      <ListItemButton LinkComponent href={`#${section}`}>
+                        <ListItemText primary={section} />
                       </ListItemButton>
                     </ListItem>
                   ))}
@@ -104,13 +104,13 @@ function NavBar() {
             Pedro Pereira
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' }, justifyContent: 'flex-end' }}>
-            {sections.map((page) => (
+            {sections.map((section) => (
               <Button
-                key={page}
-                onClick={() => console.log('click')}
+                key={section}
+                href={`#${section}`}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {section}
               </Button>
             ))}
           </Box>
