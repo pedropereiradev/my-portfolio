@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Box, Button, Chip, Divider, Fade, Modal, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Chip from '@mui/material/Chip';
+import Divider from '@mui/material/Divider';
+import Fade from '@mui/material/Fade';
+import Modal from '@mui/material/Modal';
+import Typography from '@mui/material/Typography';
 import GitHub from '@mui/icons-material/GitHub';
-import { Launch } from '@mui/icons-material';
+import Launch from '@mui/icons-material/Launch';
 
 const style = {
   position: 'absolute',

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import {
-  Box, Button, Container, ImageList, ImageListItem, ImageListItemBar, Typography,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+import Typography from '@mui/material/Typography';
 import projects from '../services/projects';
 import ProjectModal from './ProjectModal';
 import useWindowSize from '../hooks/useWindowSize';
