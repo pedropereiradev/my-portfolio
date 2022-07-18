@@ -36,7 +36,6 @@ function NavBar() {
     <AppBar position="static">
       <Container>
         <Toolbar disableGutters>
-          {/* Menu small screen < 600px */}
           <Typography
             variant="h6"
             noWrap
@@ -85,7 +84,6 @@ function NavBar() {
               </Box>
             </SwipeableDrawer>
           </Box>
-          {/* Menu bigger then 600px */}
           <Typography
             variant="h6"
             noWrap

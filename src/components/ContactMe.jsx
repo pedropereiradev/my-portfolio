@@ -41,11 +41,9 @@ function ContactMe() {
           email: '',
           message: '',
         });
-        // console.log('SUCCESS!', response.status, response.text);
       }, () => {
         setIsSuccess(false);
         setShowAlert(true);
-        // console.log('FAILED...', err);
       });
   };
 
