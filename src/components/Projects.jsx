@@ -35,7 +35,7 @@ function Projects() {
       id="projects"
       component="section"
       sx={{
-        backgroundColor: mode === 'ligth' ? '#fcfcfc' : '#101010',
+        backgroundColor: mode === 'light' ? '#fcfcfc' : '#101010',
         p: 3,
       }}
     >
