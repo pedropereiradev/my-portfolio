@@ -41,34 +41,34 @@ function ProjectModal({ projectInfo, setOpen, open }) {
           <Divider sx={{ mb: 2, mt: 1 }} />
           <Typography id="transition-modal-description" sx={{ mt: 2, color: 'text.disabled' }}>
             {projectInfo.description}
-            <Box variant="section" sx={{ my: 2 }}>
-              {projectInfo.technologies.map((tech) => (
-                <Chip
-                  key={tech}
-                  label={tech}
-                  sx={{ m: 1 }}
-                />
-              ))}
-            </Box>
-            <Box
-              variant="section"
-              sx={{
-                display: 'flex',
-                justifyContent: 'space-between',
-              }}
-            >
-              <Button size="small" variant="contained" href={projectInfo.repositoryLink}>
-                <GitHub sx={{ mr: 1 }} />
-                {' '}
-                GitHub
-              </Button>
-              <Button size="small" variant="outlined" href={projectInfo.productionLink}>
-                <Launch sx={{ mr: 1 }} />
-                {' '}
-                View Site
-              </Button>
-            </Box>
           </Typography>
+          <Box variant="section" sx={{ my: 2 }}>
+            {projectInfo.technologies.map((tech) => (
+              <Chip
+                key={tech}
+                label={tech}
+                sx={{ m: 1 }}
+              />
+            ))}
+          </Box>
+          <Box
+            variant="section"
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+            }}
+          >
+            <Button size="small" variant="contained" href={projectInfo.repositoryLink}>
+              <GitHub sx={{ mr: 1 }} />
+              {' '}
+              GitHub
+            </Button>
+            <Button size="small" variant="outlined" href={projectInfo.productionLink}>
+              <Launch sx={{ mr: 1 }} />
+              {' '}
+              View Site
+            </Button>
+          </Box>
         </Box>
       </Fade>
     </Modal>
