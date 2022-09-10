@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { techIcons, learningTechIcons } from '../assets/techIcons';
+import { frontendIcons, backendIcons } from '../assets/techIcons';
 
 function Skills() {
   return (
@@ -26,14 +26,14 @@ function Skills() {
             },
           }}
         >
-          Skills
+          Front-end
         </Typography>
         <Grid
           container
           rowSpacing={4}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
-          {techIcons.map((icon) => (
+          {frontendIcons.map((icon) => (
             <Grid item xs={4} align="center" key={icon.title}>
               <Box
                 component="img"
@@ -67,10 +67,10 @@ function Skills() {
             },
           }}
         >
-          Learning
+          Back-end
         </Typography>
         <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          {learningTechIcons.map((icon) => (
+          {backendIcons.map((icon) => (
             <Grid item xs={4} align="center" key={icon.title}>
               <Box
                 component="img"

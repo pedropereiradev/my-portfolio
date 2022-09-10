@@ -1,4 +1,4 @@
-export const techIcons = [
+export const frontendIcons = [
   {
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg',
     title: 'HTML',
@@ -35,6 +35,9 @@ export const techIcons = [
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-plain.svg',
     title: 'Material UI',
   },
+];
+
+export const backendIcons = [
   {
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg',
     title: 'Docker',
@@ -43,16 +46,9 @@ export const techIcons = [
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg',
     title: 'SQL',
   },
-];
-
-export const learningTechIcons = [
   {
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg',
     title: 'Node.js',
-  },
-  {
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg',
-    title: 'MongoDB',
   },
   {
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
@@ -63,7 +59,11 @@ export const learningTechIcons = [
     title: 'Mocha',
   },
   {
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg',
-    title: 'Python',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-plain.svg',
+    title: 'Sequelize',
+  },
+  {
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    title: 'Typescript',
   },
 ];
