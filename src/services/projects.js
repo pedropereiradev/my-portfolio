@@ -58,6 +58,36 @@ const projects = [
     },
     technologies: ['react', 'redux', 'react-router-dom', 'bootstrap'],
   },
+  {
+    title: 'Store Manager API',
+    description:
+      'Sales and products managment API RESTful using Service Layer Architecture',
+    repositoryLink: 'https://github.com/pedropereiradev/store-manager-api',
+    productionLink: '',
+    thumb: 'https://i.imgur.com/xhsUb6V.jpg',
+    pictures: {
+      img1: 'https://i.imgur.com/xhsUb6V.jpg',
+      img2: '',
+      img3: '',
+      img4: '',
+    },
+    technologies: ['Node', 'Express', 'SQL', 'Mocha', 'Chai', 'Sinon', 'Docker'],
+  },
+  {
+    title: 'Blogs API',
+    description:
+      'Blogs managment API RESTful using Service Layer Architecture',
+    repositoryLink: 'https://github.com/pedropereiradev/blogs-api',
+    productionLink: '',
+    thumb: 'https://i.imgur.com/xhsUb6V.jpg',
+    pictures: {
+      img1: 'https://i.imgur.com/xhsUb6V.jpg',
+      img2: '',
+      img3: '',
+      img4: '',
+    },
+    technologies: ['Express', 'Node', 'Sequelize', 'JWT', 'mysql', 'Docker'],
+  },
 ];
 
 export default projects;

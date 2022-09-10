@@ -63,7 +63,7 @@ function ProjectModal({ projectInfo, setOpen, open }) {
               {' '}
               GitHub
             </Button>
-            <Button size="small" variant="outlined" href={projectInfo.productionLink}>
+            <Button size="small" variant="outlined" disabled={!projectInfo.productionLink} href={projectInfo.productionLink}>
               <Launch sx={{ mr: 1 }} />
               {' '}
               View Site
